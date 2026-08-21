@@ -4,6 +4,7 @@ import Hero from "@/components/hero/hero";
 import ProjectCard from "@/components/project-card/project-card";
 import SiteHeader from "@/components/site-header/site-header";
 import Image from "next/image";
+import { assetPath } from "@/lib/assetPath";
 
 export default function Home() {
   return (
@@ -16,7 +17,7 @@ export default function Home() {
           <Container className="flex justify-center">
             <div className="mr-8 flex-none">
               <Image
-                src="/headshot.jpg"
+                src={assetPath("/headshot.jpg")}
                 alt=""
                 width={100}
                 height={100}

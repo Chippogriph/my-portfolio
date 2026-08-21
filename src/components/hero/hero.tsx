@@ -1,6 +1,17 @@
+import { assetPath } from "@/lib/assetPath";
+
 export default function Hero() {
   return (
-    <div className="hero-container">
+    <div className="hero-container" style={{
+    backgroundImage: `
+      linear-gradient(
+        to bottom,
+        rgba(255, 168, 76, 0.6) 0%,
+        rgba(255, 246, 239, 0.6) 100%
+      ),
+      url("${assetPath("/hero-bg.jpg")}")
+    `,
+  }}>
       <div className="max-w-2xl flex flex-col">
         <h1 className="text-5xl font-extrabold mb-2">Christoffer Persson</h1>
         <span className="w-20 p-0.5 bg-dark-terracotta"></span>
